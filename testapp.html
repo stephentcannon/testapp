@@ -1,0 +1,25 @@
+<head>
+  <title>testapp</title>
+</head>
+
+<body>
+  {{> search_places}}
+</body>
+
+<template name="left_menu">
+  <div id="left_menu_div">
+    <h1>Welcome to crib.io</h1>
+    <hr />
+    <input type="text" placeholder="Place to search..." />
+    <button id="switch_map_list_btn" class="btn btn-default" type="button">Switch to list view</button>
+    <br />
+    <label><input type="checkbox" id="near-movie-theaters-checkbox"/>I like movies.</label>
+    <label><input type="checkbox" id="near-student-restaurants-checkbox"/>I like student restaurants.</label>
+    
+  </div>
+</template>
+ 
+<template name="search_places">
+  {{> left_menu}}
+ 
+</template>
